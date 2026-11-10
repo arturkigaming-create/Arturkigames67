@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GamesHub</title>
+    <style>
+        /* Base styles and dark theme */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f12;
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Navigation Header */
+        header {
+            max-width: 1200px;
+            margin: 0 auto 30px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #1f2937;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: #3b82f6;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 0.9rem;
+            color: #6b7280;
+            background: #1e1e24;
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+
+        /* Responsive Grid layout for Games */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual Game Card item */
+        .game-card {
+            background-color: #18181c;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+
+        /* Thumbnail placeholder */
+        .game-thumbnail {
+            width: 100%;
+            height: 140px;
+            background-color: #27272a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        /* Info section inside cards */
+        .game-info {
+            padding: 15px;
+            background-color: #18181c;
+        }
+        .game-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #f8fafc;
+        }
+        .game-desc {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        /* Footer notice */
+        footer {
+            max-width: 1200px;
+            margin: 50px auto 20px auto;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GamesHub</h1>
+        <div class="subtitle">v1.0 Development</div>
+    </header>
+
+    <!-- Main catalog container -->
+    <main class="games-grid">
+
+        <!-- Game item 1 -->
+        <a href="https://pacman.com" target="_blank" class="game-card">
+            <div class="game-thumbnail">🍒</div>
+            <div class="game-info">
+                <div class="game-title">Pac-Man</div>
+                <div class="game-desc">Classic retro arcade maze game.</div>
+            </div>
+        </a>
+
+        <!-- Game item 2 -->
+        <a href="https://tetris.com" target="_blank" class="game-card">
+            <div class="game-thumbnail">🧱</div>
+            <div class="game-info">
+                <div class="game-title">Tetris</div>
+                <div class="game-desc">Fit the falling geometric blocks together.</div>
+            </div>
+        </a>
+
+        <!-- Game item 3 -->
+        <a href="https://cookieclicker.ee" target="_blank" class="game-card">
+            <div class="game-thumbnail">🍪</div>
+            <div class="game-info">
+                <div class="game-title">Cookie Clicker</div>
+                <div class="game-desc">The ultimate idle baking simulator game.</div>
+            </div>
+        </a>
+
+        <!-- Add more game cards here following the exact same format -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GamesHub. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
